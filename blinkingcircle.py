@@ -8,22 +8,19 @@ def draw_circle(r, color):
     turtle.pendown()
     turtle.circle(r)
 
-# ------------ PARAMETERS --------------
-r = 100
-blinks = 10
-delay = 0.5
+
 
 turtle.speed(0)
 turtle.hideturtle()
 
-for i in range(blinks):
+for i in range(10):
     turtle.clear()
-    draw_circle(r, "black")   # Circle ON
+    draw_circle(100, "black")   # Circle ON
     turtle.getscreen().update()
-    time.sleep(delay)
+    time.sleep(0.5)
 
     turtle.clear()            # Circle OFF
     turtle.getscreen().update()
-    time.sleep(delay)
+    time.sleep(0.5)
 
 turtle.done()
